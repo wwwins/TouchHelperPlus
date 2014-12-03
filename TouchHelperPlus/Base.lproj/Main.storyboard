@@ -83,26 +83,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYG-q2-ZkM">
-                                <rect key="frame" x="133" y="100" width="47" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="google.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhR-uL-9W8">
-                                <rect key="frame" x="188" y="96" width="280" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="4YX-Sq-ueE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBl-B1-CMF">
-                                <rect key="frame" x="133" y="146" width="335" height="44"/>
+                                <rect key="frame" x="150" y="153" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="jws-lg-C9E"/>
-                                    <constraint firstAttribute="width" secondItem="HBl-B1-CMF" secondAttribute="height" multiplier="335:44" id="pp6-wY-kh1"/>
+                                    <constraint firstAttribute="width" secondItem="HBl-B1-CMF" secondAttribute="height" multiplier="75:11" id="KiX-9E-hxL"/>
+                                    <constraint firstAttribute="width" constant="300" id="so7-yj-dOK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="GO">
@@ -113,18 +99,32 @@
                                     <action selector="clicked:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="FSG-wp-qIB"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="google.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhR-uL-9W8">
+                                <rect key="frame" x="207" y="96" width="243" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="s5S-m9-SqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYG-q2-ZkM">
+                                <rect key="frame" x="150" y="100" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RhR-uL-9W8" firstAttribute="centerY" secondItem="VYG-q2-ZkM" secondAttribute="centerY" constant="0.5" id="331-X1-Z9L"/>
+                            <constraint firstAttribute="centerX" secondItem="HBl-B1-CMF" secondAttribute="centerX" id="61e-QR-fy5"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" symbolic="YES" id="62x-JV-TTJ"/>
                             <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" id="JzS-HC-Rnl"/>
-                            <constraint firstItem="RhR-uL-9W8" firstAttribute="trailing" secondItem="HBl-B1-CMF" secondAttribute="trailing" id="Yxu-SM-AvM"/>
-                            <constraint firstItem="RhR-uL-9W8" firstAttribute="leading" secondItem="VYG-q2-ZkM" secondAttribute="trailing" constant="8" id="dpT-m3-RcE"/>
-                            <constraint firstItem="RhR-uL-9W8" firstAttribute="centerY" secondItem="VYG-q2-ZkM" secondAttribute="centerY" constant="0.5" id="h8e-k5-p9u"/>
-                            <constraint firstItem="HBl-B1-CMF" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="82" id="iHe-Qw-2dA"/>
+                            <constraint firstItem="HBl-B1-CMF" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="89" id="KQy-6j-Llh"/>
+                            <constraint firstItem="HBl-B1-CMF" firstAttribute="top" secondItem="RhR-uL-9W8" secondAttribute="bottom" constant="27" id="VMg-2T-Ldb"/>
+                            <constraint firstItem="RhR-uL-9W8" firstAttribute="trailing" secondItem="HBl-B1-CMF" secondAttribute="trailing" id="aaB-dg-2Rn"/>
+                            <constraint firstItem="RhR-uL-9W8" firstAttribute="leading" secondItem="VYG-q2-ZkM" secondAttribute="trailing" constant="10" id="bMD-q4-FsI"/>
                             <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" symbolic="YES" id="pXB-RP-Zz6"/>
-                            <constraint firstAttribute="centerX" secondItem="HBl-B1-CMF" secondAttribute="centerX" constant="-0.5" id="rhb-Fh-eNF"/>
-                            <constraint firstItem="HBl-B1-CMF" firstAttribute="top" secondItem="RhR-uL-9W8" secondAttribute="bottom" constant="20" id="s0C-Ur-WLn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
