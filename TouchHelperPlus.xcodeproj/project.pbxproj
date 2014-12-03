@@ -14,6 +14,13 @@
 		D00FC5D91A2EFC190094E85F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00FC5D81A2EFC190094E85F /* Images.xcassets */; };
 		D00FC5DC1A2EFC190094E85F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00FC5DA1A2EFC190094E85F /* LaunchScreen.xib */; };
 		D00FC5E81A2EFC190094E85F /* TouchHelperPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FC5E71A2EFC190094E85F /* TouchHelperPlusTests.swift */; };
+		D00FC5F91A2F02E80094E85F /* KAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FC5F31A2F02E80094E85F /* KAWebViewController.m */; };
+		D00FC5FA1A2F02E80094E85F /* KAWebViewController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00FC5F41A2F02E80094E85F /* KAWebViewController.xcassets */; };
+		D00FC5FB1A2F02E80094E85F /* KAWModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FC5F61A2F02E80094E85F /* KAWModalWebViewController.m */; };
+		D00FC5FC1A2F02E80094E85F /* KAWToolbarItems.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FC5F81A2F02E80094E85F /* KAWToolbarItems.m */; };
+		D06419151A2F0DE7003A56E9 /* COSTouchVisualizerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D06419101A2F0DE7003A56E9 /* COSTouchVisualizerWindow.m */; };
+		D06419161A2F0DE7003A56E9 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D06419121A2F0DE7003A56E9 /* .gitkeep */; };
+		D06419171A2F0DE7003A56E9 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D06419141A2F0DE7003A56E9 /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,18 @@
 		D00FC5E11A2EFC190094E85F /* TouchHelperPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchHelperPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00FC5E61A2EFC190094E85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D00FC5E71A2EFC190094E85F /* TouchHelperPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHelperPlusTests.swift; sourceTree = "<group>"; };
+		D00FC5F21A2F02E80094E85F /* KAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAWebViewController.h; sourceTree = "<group>"; };
+		D00FC5F31A2F02E80094E85F /* KAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAWebViewController.m; sourceTree = "<group>"; };
+		D00FC5F41A2F02E80094E85F /* KAWebViewController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KAWebViewController.xcassets; sourceTree = "<group>"; };
+		D00FC5F51A2F02E80094E85F /* KAWModalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAWModalWebViewController.h; sourceTree = "<group>"; };
+		D00FC5F61A2F02E80094E85F /* KAWModalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAWModalWebViewController.m; sourceTree = "<group>"; };
+		D00FC5F71A2F02E80094E85F /* KAWToolbarItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAWToolbarItems.h; sourceTree = "<group>"; };
+		D00FC5F81A2F02E80094E85F /* KAWToolbarItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAWToolbarItems.m; sourceTree = "<group>"; };
+		D064190F1A2F0DE7003A56E9 /* COSTouchVisualizerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSTouchVisualizerWindow.h; sourceTree = "<group>"; };
+		D06419101A2F0DE7003A56E9 /* COSTouchVisualizerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSTouchVisualizerWindow.m; sourceTree = "<group>"; };
+		D06419121A2F0DE7003A56E9 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D06419141A2F0DE7003A56E9 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D06419191A2F0F71003A56E9 /* TouchHelperPlus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchHelperPlus-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +98,11 @@
 		D00FC5CC1A2EFC190094E85F /* TouchHelperPlus */ = {
 			isa = PBXGroup;
 			children = (
+				D064190C1A2F0CC4003A56E9 /* 3rd */,
 				D00FC5CF1A2EFC190094E85F /* AppDelegate.swift */,
 				D00FC5D11A2EFC190094E85F /* MasterViewController.swift */,
 				D00FC5D31A2EFC190094E85F /* DetailViewController.swift */,
+				D06419191A2F0F71003A56E9 /* TouchHelperPlus-Bridging-Header.h */,
 				D00FC5D51A2EFC190094E85F /* Main.storyboard */,
 				D00FC5D81A2EFC190094E85F /* Images.xcassets */,
 				D00FC5DA1A2EFC190094E85F /* LaunchScreen.xib */,
@@ -113,6 +134,65 @@
 				D00FC5E61A2EFC190094E85F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D00FC5F11A2F02E80094E85F /* KAWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D00FC5F21A2F02E80094E85F /* KAWebViewController.h */,
+				D00FC5F31A2F02E80094E85F /* KAWebViewController.m */,
+				D00FC5F41A2F02E80094E85F /* KAWebViewController.xcassets */,
+				D00FC5F51A2F02E80094E85F /* KAWModalWebViewController.h */,
+				D00FC5F61A2F02E80094E85F /* KAWModalWebViewController.m */,
+				D00FC5F71A2F02E80094E85F /* KAWToolbarItems.h */,
+				D00FC5F81A2F02E80094E85F /* KAWToolbarItems.m */,
+			);
+			name = KAWebViewController;
+			path = ../KAWebViewController;
+			sourceTree = "<group>";
+		};
+		D064190C1A2F0CC4003A56E9 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				D064190D1A2F0DAA003A56E9 /* COSTouchVisualizer */,
+				D00FC5F11A2F02E80094E85F /* KAWebViewController */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		D064190D1A2F0DAA003A56E9 /* COSTouchVisualizer */ = {
+			isa = PBXGroup;
+			children = (
+				D064190E1A2F0DE7003A56E9 /* Classes */,
+			);
+			name = COSTouchVisualizer;
+			sourceTree = "<group>";
+		};
+		D064190E1A2F0DE7003A56E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D064190F1A2F0DE7003A56E9 /* COSTouchVisualizerWindow.h */,
+				D06419101A2F0DE7003A56E9 /* COSTouchVisualizerWindow.m */,
+				D06419111A2F0DE7003A56E9 /* ios */,
+				D06419131A2F0DE7003A56E9 /* osx */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D06419111A2F0DE7003A56E9 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				D06419121A2F0DE7003A56E9 /* .gitkeep */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		D06419131A2F0DE7003A56E9 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				D06419141A2F0DE7003A56E9 /* .gitkeep */,
+			);
+			path = osx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FC5D71A2EFC190094E85F /* Main.storyboard in Resources */,
+				D00FC5FA1A2F02E80094E85F /* KAWebViewController.xcassets in Resources */,
+				D06419161A2F0DE7003A56E9 /* .gitkeep in Resources */,
+				D06419171A2F0DE7003A56E9 /* .gitkeep in Resources */,
 				D00FC5DC1A2EFC190094E85F /* LaunchScreen.xib in Resources */,
 				D00FC5D91A2EFC190094E85F /* Images.xcassets in Resources */,
 			);
@@ -216,6 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FC5D41A2EFC190094E85F /* DetailViewController.swift in Sources */,
+				D06419151A2F0DE7003A56E9 /* COSTouchVisualizerWindow.m in Sources */,
+				D00FC5FB1A2F02E80094E85F /* KAWModalWebViewController.m in Sources */,
+				D00FC5FC1A2F02E80094E85F /* KAWToolbarItems.m in Sources */,
+				D00FC5F91A2F02E80094E85F /* KAWebViewController.m in Sources */,
 				D00FC5D21A2EFC190094E85F /* MasterViewController.swift in Sources */,
 				D00FC5D01A2EFC190094E85F /* AppDelegate.swift in Sources */,
 			);
@@ -343,6 +430,7 @@
 				INFOPLIST_FILE = TouchHelperPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/isobar/Desktop/TouchHelperPlus/TouchHelperPlus/TouchHelperPlus-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -353,6 +441,7 @@
 				INFOPLIST_FILE = TouchHelperPlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/isobar/Desktop/TouchHelperPlus/TouchHelperPlus/TouchHelperPlus-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +498,7 @@
 				D00FC5ED1A2EFC190094E85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00FC5EE1A2EFC190094E85F /* Build configuration list for PBXNativeTarget "TouchHelperPlusTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +507,7 @@
 				D00FC5F01A2EFC190094E85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

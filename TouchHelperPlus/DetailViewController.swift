@@ -41,5 +41,20 @@ class DetailViewController: UIViewController {
   }
 
 
+  @IBAction func clicked(sender: AnyObject) {
+    self.performSegueWithIdentifier("IdentifierToWebView", sender: self)
+  }
+  
+  
+  // MARK: - Segues
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "IdentifierToWebView" {
+      let kaw = segue.destinationViewController as KAWModalWebViewController;
+      kaw.url = NSURL(string: "http://google.com")
+    }
+  }
+
+  
 }
 
