@@ -11,8 +11,12 @@ import UIKit
 class DetailViewController: UIViewController {
 
   @IBOutlet weak var detailDescriptionLabel: UILabel!
+  @IBOutlet weak var textFieldForInputURL: UITextField!
 
-
+  struct Constants {
+    static let DefaultURL = "google.com"
+  }
+  
   var detailItem: AnyObject? {
     didSet {
         // Update the view.
@@ -50,8 +54,13 @@ class DetailViewController: UIViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "IdentifierToWebView" {
-      let kaw = segue.destinationViewController as KAWModalWebViewController;
-      kaw.url = NSURL(string: "http://google.com")
+      if var passURL = textFieldForInputURL.text {
+        let kaw = segue.destinationViewController as KAWModalWebViewController;
+        if passURL.isEmpty {
+          passURL = Constants.DefaultURL
+        }
+        kaw.url = NSURL(string: "http://"+passURL)
+      }
     }
   }
 
