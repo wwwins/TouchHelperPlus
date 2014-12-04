@@ -67,7 +67,7 @@ class MasterViewController: UITableViewController {
 
     //let object = objects[indexPath.row] as NSDate
     let object = objects[indexPath.row] as NSString;
-    cell.textLabel.text = object.description
+    cell.textLabel?.text = object.description
     return cell
   }
 
